@@ -9,6 +9,6 @@ RUN apk update && \
 
 COPY ./docker-entrypoint.sh .
 
-ENTRYPOINT ["/docker-entrypoint.sh"]
+ENTRYPOINT ["/app/docker-entrypoint.sh"]
 
 CMD ["fio"]
