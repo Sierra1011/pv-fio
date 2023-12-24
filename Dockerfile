@@ -7,7 +7,7 @@ WORKDIR /app
 RUN apk update && \
     apk upgrade 
 
-COPY ./docker-entrypoint.sh
+COPY ./docker-entrypoint.sh .
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
